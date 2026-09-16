@@ -36,9 +36,9 @@ Once enabled, the module registers Alpine magic helpers that fire confetti from 
 
 ```html
 <button
-    x-on:click="$confetti({ particleCount: 250, spread: 160, startVelocity: 35 })"
+  x-on:click="$confetti({ particleCount: 250, spread: 160, startVelocity: 35 })"
 >
-    Launch confetti
+  Launch confetti
 </button>
 ```
 
@@ -55,6 +55,33 @@ Once enabled, the module registers Alpine magic helpers that fire confetti from 
 ```
 
 The helpers accept either a number of particles or a config object, so you can easily fine-tune the look and behavior for sale banners, success states, or celebratory interactions.
+
+## Configuration
+
+All methods accept the full range of [canvas-confetti options](https://github.com/catdad/canvas-confetti?tab=readme-ov-file#options). Here's a quick reference for the most commonly used ones:
+
+```javascript
+{
+    particleCount: 100, // Number of particles
+    angle: 90,          // Direction in degrees
+    spread: 45,         // Spread in degrees
+    startVelocity: 45,  // Initial velocity
+    decay: 0.9,         // Particle decay rate
+    gravity: 1,         // Gravity strength
+    drift: 0,           // Side-to-side drift
+    ticks: 200,         // Particle lifetime
+    colors: ['#fff'],   // Color array
+    scalar: 1           // Size multiplier
+}
+```
+
+The plugin respects the `prefers-reduced-motion` media query by default. Users with motion sensitivity won't see the animations.
+
+## Credits
+
+- 🎊 [canvas-confetti](https://github.com/catdad/canvas-confetti)
+- ⛰️ [Alpine.js](https://alpinejs.dev)
+- 😎 [Jack Webb-Heller](https://github.com/jackwh)
 
 ## License
 

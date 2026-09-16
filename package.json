@@ -1,0 +1,25 @@
+{
+  "name": "@deadsimple/hyva-alpine-confetti",
+  "description": "A deadsimple wrapper to use the confetti plugin from AlpineJs directly in your Hyvä theme",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deadsimple-ecommerce/HyvaAlpineConfetti.git"
+  },
+  "authors": [
+    {
+      "name": "Maurits Meester",
+      "email": "maurits@e-mmer.nl"
+    }
+  ],
+  "devDependencies": {
+    "@release-it/bumper": "^7.0.5",
+    "release-it": "^19.2.3"
+  },
+  "scripts": {
+    "--- 🚀 Releases ---": "",
+    "release": "release-it",
+    "release:dry": "release-it --dry-run"
+  }
+}

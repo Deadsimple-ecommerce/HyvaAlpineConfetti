@@ -1,0 +1,26 @@
+{
+  "git": {
+    "commitMessage": "chore(release): v${version}",
+    "changelog": "npx changelogen@latest --no-output"
+  },
+  "github": {
+    "release": true
+  },
+  "plugins": {
+    "@release-it/bumper": {
+      "in": "package.json",
+      "out": [
+        {
+          "file": "composer.json",
+          "type": "application/json"
+        }
+      ]
+    }
+  },
+  "hooks": {
+    "before:init": "git pull",
+    "after:bump": [
+      "npx changelogen@latest --output='CHANGELOG.md' -r ${version}"
+    ]
+  }
+}
