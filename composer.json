@@ -1,7 +1,7 @@
 {
     "name": "deadsimple/hyva-alpine-confetti",
     "description": "A deadsimple wrapper to use the confetti plugin from Jack Web Heller directly in you Hyvä theme and forms",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "magento2-module",
     "license": "MIT",
     "authors": [
